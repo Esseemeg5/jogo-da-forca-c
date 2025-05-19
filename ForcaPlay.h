@@ -7,7 +7,8 @@
 #include <ctype.h>
 #include <time.h>
 
-char words[10][20] = { "KERNEL", "FIRWARE", "SIGKILL", "BOOTLOADER", "SYSTEMD", "MODO REAL", "ARCH LINUX", "MAQUINA HOSPEDEIRA", "MAQUINA VIRTUAL", "USUARIO ROOT" };
+int numWords = 10;
+char words[numWords][20] = { "KERNEL", "FIRWARE", "SIGKILL", "BOOTLOADER", "SYSTEMD", "MODO REAL", "ARCH LINUX", "MAQUINA HOSPEDEIRA", "MAQUINA VIRTUAL", "USUARIO ROOT" };
 
 char chosenWord[20];
 char wordProgress[20];
@@ -20,8 +21,8 @@ int lives = 6;
 
 int ForcaGame()
 {
-    srand(time(NULL)); // randomizar utilizando o hor�rio atual
-    strcpy(chosenWord, words[rand() % 10]); // N�o esque�a de trocar o n�mero acompanhando o rand() caso altere a matriz de palavras!
+    srand(time(NULL)); // randomizar utilizando o horário atual
+    strcpy(chosenWord, words[rand() % numWords]); // Não esqueça de trocar o número acompanhando o rand() caso altere a matriz de palavras! --> Não precisa mais 🤣🤣🤣
     int status;
     for (int i = 0; i < strlen(chosenWord); i++)
     {
