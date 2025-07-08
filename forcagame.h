@@ -120,6 +120,7 @@ int ForcaGame()
 
     if (!fptr) {
         printf("Arquivo \"palavras.txt\" não foi encontrado. Certifique-se que está no mesmo diretório que o código compilado.\n");
+        system("pause");
         return -1;
     }
     getRandomLine(fptr);
