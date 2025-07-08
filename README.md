@@ -1,8 +1,10 @@
 ## Edite o .txt para adicionar/remover palavras!
 
 ### Retornos
-**0** - Usuário perdeu o jogo  
-**1** - Usuário ganhou o jogo
+| Int | Descrição |
+| --- | --- |
+| `0` | Usuário perdeu o jogo |
+| `1` | Usuário ganhou o jogo |
 
 ### Exemplo de Uso
 ```c
