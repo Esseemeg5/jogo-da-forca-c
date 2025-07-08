@@ -13,15 +13,15 @@
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    printf("Oi galera!\n");
+    printf("Olá mundo!\n");
     system("pause");
 
     int res = ForcaGame();
     system("cls");
     if (res) {
-        printf("Parabéns você ganhou parça tamo junto\n\n");
+        printf("Parabéns, você ganhou!\n\n");
     } else {
-        printf("Que pena... Da próxima tu consegue\n\n");
+        printf("Que pena... Mais sorte na próxima!\n\n");
     }
 
     return 0;
